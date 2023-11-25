@@ -230,7 +230,6 @@ async def _(event):
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
     تم صيد (@{username}) !
-    سيثون  : @siethon
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -243,7 +242,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await rickthon.send_message(event.chat.id, "سأستمر بلفحص !")
+                        await rickthon.send_message(event.chat.id, "اجاك متاح !")
             else:
                 pass
             trys += 1
